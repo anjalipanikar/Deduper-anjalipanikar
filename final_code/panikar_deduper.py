@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-########################################################################################################
+##############################################################################################################################
 # Program: De-duplexing Algorithm for Mapped and Aligned Illumina Sequencing Data 
 #  
 # Creator: Geethanjali Panikar 
 #
 # Description: An algorithm to filter potential PCR duplicated sequence reads from a trimmed and aligned SAM file.
-# Algorithm additionally filters data for unwwanted 'unmapped' reads and if the option is chosen, reads 
-# that do not contain a Unique Molecular Identifier (UMI) present in the provided UMI file.
+#              Algorithm additionally filters data for unwwanted 'unmapped' reads and if the option is chosen, reads 
+#              that do not contain a Unique Molecular Identifier (UMI) present in the provided UMI file.
 # 
 # Input: 1 required files: The SAM file to be deduplexed. 
 #        1 optional file: A file of known UMIs
@@ -17,8 +17,8 @@
 #                                                  (3) extracted unmapped reads (.unmapped.sam)
 #                                                  (4) extracted bad reads that did not match known UMIs
 #  
-# Arguments to Run Program: $ python3 main.py -r1 <Read 1> -r2 <Read 2> -i1 <Index 1> -i2 <Index 2> 
-#########################################################################################################
+# Arguments to Run Program: $ python3 panikar_deduper.py -s <SAM file> -u <UMI file> 
+###############################################################################################################################
 
 import os
 import dedup_functions 
@@ -142,11 +142,3 @@ os.system("rm -rf " + deduped_sam)
 os.system("rm -rf " + bam_file)
 os.system("rm -rf " + sorted_bam)
 os.system("rm -rf " + sorted_no_headers)
-    
-
-
-
-
-
-
-
