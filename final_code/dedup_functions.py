@@ -6,7 +6,7 @@ import re
 def get_args():                                         #function to parse command line arguments
     parser = argparse.ArgumentParser(description=" ")
     parser.add_argument("-s", "--sam", help="input SAM file to deduplex", required=True)
-    parser.add_argument("-p", "--paired_end", help="designates if file is paired end", required=False)
+    parser.add_argument("-p", "--paired", help="designates if file is paired end", required=False)
     parser.add_argument("-u", "--umi", help="designates file containing the list of UMIs", required=False)
     return parser.parse_args() 
 
