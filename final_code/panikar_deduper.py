@@ -24,7 +24,7 @@ import os
 import sys
 import dedup_functions 
 
-# --------------------------------------------- COLLECT ARGUMENTS AND PRE-PROCESS INPUT SAM FILE WITH UNIX  ----------------------------------------------- # 
+# -------------------------------------------- COLLECT ARGUMENTS AND PRE-PROCESS INPUT SAM FILE WITH UNIX  --------------------------------------------- # 
 
 # collect arguments 
 
@@ -58,7 +58,7 @@ os.system("grep '^[[:space:]]*@' " + sorted_sam + ' > ' + final_sam)
 os.system("grep -v '^[[:space:]]*@' " + sorted_sam + " > " + sorted_no_headers)
 
 
-# --------------------------------------------------------- OPEN FILES AND INITIALIZE VARIABLES ------------------------------------------------------------ # 
+# -------------------------------------------------------- OPEN FILES AND INITIALIZE VARIABLES ---------------------------------------------------------- # 
 
 
 # set umi filehandle and umi list addresses to 'None' as default 
@@ -88,7 +88,7 @@ umi_dict = {}
 file_lines = 1 
 duplicates = 0
 
-# ------------------------------------------------------------ ALGORITHM FOR DEDUPLEXING DATA --------------------------------------------------------------- # 
+# ------------------------------------------------------------ ALGORITHM FOR DEDUPLEXING DATA ----------------------------------------------------------- # 
 
 #read in first SAM entry of the file 
 
