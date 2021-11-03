@@ -17,7 +17,7 @@
 #                                                  (3) extracted unmapped reads (.unmapped.sam)
 #                                                  (4) extracted bad reads that did not match known UMIs
 #  
-# Arguments to Run Program: $ python3 main.py -r1 <Read 1> -r2 <Read 2> -i1 <Index 1> -i2 <Index 2> 
+# Arguments to Run Program: $ python3 panikar_deduper.py -s <SAM file> -u <optional UMI file> 
 #########################################################################################################
 
 import os
