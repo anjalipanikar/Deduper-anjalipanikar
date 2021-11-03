@@ -21,6 +21,7 @@
 #########################################################################################################
 
 import os
+import sys
 import dedup_functions 
 
 # ------------  COLLECT ARGUMENTS AND PRE-PROCESS INPUT SAM FILE WITH UNIX -------------------- # 
