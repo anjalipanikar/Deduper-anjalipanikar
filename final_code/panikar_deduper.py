@@ -126,12 +126,8 @@ for line in sf:
         continue
 
     file_lines += 1
-# close files 
 
-print("file lines: ")
-print(file_lines)
-print("duplicates: ")
-print(duplicates)
+# close files 
 
 sf.close()
 sf2.close()
