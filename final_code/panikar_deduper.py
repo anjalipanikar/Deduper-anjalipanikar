@@ -31,6 +31,10 @@ args = dedup_functions.get_args()
 sam_file = args.sam
 umi_file = args.umi
 
+if args.paired:
+    print('Cannot process paired-end data. Run this program with single-end reads only.')
+    sys.exit(1)
+
 # declare file names 
 
 sorted_sam = "sorted_temp.sam"
