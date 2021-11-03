@@ -50,8 +50,6 @@ def softclip_adjust(sam_entry):                         # function to calculate 
     right_softclipped = 0                               # calculated by summing all numeric values in the CIGAR string and adding this
     inserted = 0                                        # this to the starting position reported in the SAM file, and then subtracting 
                                                         # any bases that were softclipped on the right side (S) or inserted (I)
-    
-
     if get_strand(sam_entry) == '+':                    # if the strand is forward
         if 'S' in cigar:                                # if it is softclipped 
             clip_num = cigar.split('S')[0]              # find the num bases softclipped     
