@@ -147,10 +147,3 @@ os.system("rm -rf " + bam_file)
 os.system("rm -rf " + sorted_bam)
 os.system("rm -rf " + sorted_no_headers)
     
-
-
-
-
-
-
-
