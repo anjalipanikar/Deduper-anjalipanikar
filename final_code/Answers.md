@@ -86,7 +86,7 @@ Number of Reads   Chromosome
 3 MU069434.1
 111 JH584295.1
 ```
-command: ```cat C1_SE_uniqAlign_deduped.sam | grep -v "^@" | cut -f 3 | uniq -c```
+command: ```cat C1_SE_uniqAlign.deduplexed.sam | grep -v "^@" | cut -f 3 | uniq -c```
 
 
 
