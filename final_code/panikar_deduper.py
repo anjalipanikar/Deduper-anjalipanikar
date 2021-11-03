@@ -57,7 +57,9 @@ os.system("samtools view -h " + sorted_bam + " > " + sorted_sam)
 os.system("grep '^[[:space:]]*@' " + sorted_sam + ' > ' + final_sam)
 os.system("grep -v '^[[:space:]]*@' " + sorted_sam + " > " + sorted_no_headers)
 
-# ------------  OPEN FILES AND INITIALIZE VARIABLES --------------------# 
+
+# --------------------------------------------------------- OPEN FILES AND INITIALIZE VARIABLES ------------------------------------------------------------ # 
+
 
 # set umi filehandle and umi list addresses to 'None' as default 
 
@@ -85,7 +87,8 @@ unmapped = open(unmapped_sam, "w")
 umi_dict = {}
 file_lines = 1 
 duplicates = 0
-# ------------  ALGORITHM FOR DEDUPLEXING DATA --------------------# 
+
+# ------------------------------------------------------------ ALGORITHM FOR DEDUPLEXING DATA --------------------------------------------------------------- # 
 
 #read in first SAM entry of the file 
 
